@@ -1,20 +1,10 @@
-# naming the repo
+---
 name: First Workflow
-
-# Trigger Events
 on: push
-
-# Jobs for this workflow
 jobs:
   build:
-    run-ons: ubuntu-latest    
-    
+    runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v3   # push trigger' 1st step
+      -uses: actions/checkout@v3
       -name: Run a sample actions
-   
-      
-      
-    
-      
-    
+    run: echo "running a sample action file"
