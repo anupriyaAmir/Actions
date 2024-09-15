@@ -1,10 +1,14 @@
----
-name: First Workflow
-on: push
+# This workflow represents a set of basic cmds
+on:
+  push:
+    branches:
+      - 'main'
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
+
+  basic-ubuntu-20:
+    runs-on: ubuntu-20.04
     steps:
-      -uses: actions/checkout@v3
-      -name: Run a sample actions
+      - name: Checkout
+        uses: actions/checkout@v4
     run: echo "running a sample action file"
