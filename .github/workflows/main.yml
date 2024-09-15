@@ -1,22 +1,15 @@
-# This workflow represents a set of basic cmds
+---
 name: sample Workflow
-
-# Trigger Events
 on:
   push:
     branches:
-      - 'main'
-      
-# Jobs for this workflow
+      - main
 jobs:
   build:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout action
-      - uses: actions/checkout@v4  # push trigger' 1st step
+      - uses: actions/checkout@v4
         run: echo "checkout trigger"
-
       - name: Simulating error
         run: echo "error in this line and exit"; exit 1
-
-
