@@ -16,5 +16,4 @@ jobs:
       - uses: actions/checkout@v4  # push trigger' 1st step
 
     
-      - name: Every time
-        run: echo "This step will always run"
+
