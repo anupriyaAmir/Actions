@@ -1,5 +1,5 @@
 # This workflow represents a set of basic cmds
-name: sample Workflow
+name: sample workflow
 
 # Trigger Events
 on:
@@ -13,10 +13,4 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - name: Checkout action
-      - uses: actions/checkout@v4  # push trigger' 1st step
-        run: echo "checkout trigger"
-
-
-
-    
-
+        uses: actions/checkout@v4  # push trigger' 1st step
