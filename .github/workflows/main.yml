@@ -11,5 +11,5 @@ jobs:
       - name: Checkout action
       - uses: actions/checkout@v4
         run: echo "checkout trigger"
-      - name: Simulating error
-        run: echo "error in this line and exit"; exit 1
+        
+      
