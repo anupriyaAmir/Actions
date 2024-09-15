@@ -1,14 +1,16 @@
 # This workflow represents a set of basic cmds
+# Trigger Events
 on:
   push:
     branches:
       - 'main'
-
+      
+# Jobs for this workflow
 jobs:
-
-  basic-ubuntu-20:
-    runs-on: ubuntu-20.04
+  build:
+    runs-on: ubuntu-latest 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-    run: echo "running a sample action file"
+      - name: Checkout action
+        uses: actions/checkout@v4  # push trigger' 1st step
+
+
