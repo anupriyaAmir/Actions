@@ -15,5 +15,6 @@ jobs:
       - name: Checkout action
       - uses: actions/checkout@v4  # push trigger' 1st step
 
-      - name: Simulating error
-        run: echo "error in this line and exit"; exit 1
+    
+      - name: Every time
+        run: echo "This step will always run"
